@@ -1,0 +1,14 @@
+.menu {
+    display: inline-flex;
+    margin-right: 0.5rem;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: none;
+}
