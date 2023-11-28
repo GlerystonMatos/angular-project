@@ -7,3 +7,23 @@
 <div>
     <p>E-mail do usuário: {{usuario?.email}}</p>
 </div>
+<div>
+    <table border="1" style="margin-bottom: 1rem;">
+        <tr>
+            <th>
+                Nome
+            </th>
+            <th>
+                Email
+            </th>
+        </tr>
+        <tr *ngFor="let user of usuarios">
+            <td>
+                {{user.nome}}
+            </td>
+            <td>
+                {{user.email}}
+            </td>
+        </tr>
+    </table>
+</div>
