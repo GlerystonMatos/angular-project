@@ -1,16 +1,18 @@
-<form style="margin-top: 1rem; margin-bottom: 1rem;">
-    <div>
-        <label>Nome</label>
-        <input type="text" name="nome" [(ngModel)]="usuario.nome" style="margin-left: 0.3rem;" />
+<div class="ui-g ui-fluid" style="margin-top: 1rem; margin-bottom: 1rem;">
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <input type="text" [(ngModel)]="usuario.nome" pInputText placeholder="Nome" style="margin-left: 0.3rem;" />
+        </div>
     </div>
-    <div>
-        <label>Email</label>
-        <input type="email" name="email" [(ngModel)]="usuario.email" style="margin-left: 0.3rem;" />
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <input type="email" [(ngModel)]="usuario.email" pInputText placeholder="E-mail" style="margin-left: 0.3rem; margin-top: 1rem;" />
+        </div>
     </div>
-    <div style="margin-top: 0.3rem;">
+    <div style="margin-top: 1rem;">
         {{usuario | json}}
     </div>
     <div>
-        <button type="button" (click)="salvar()" style="margin-top: 0.5rem;">Salvar</button>
+        <button pButton (click)="salvar()" style="margin-top: 1rem;" label="Salvar"></button>
     </div>
-</form>
+</div>
